@@ -1,0 +1,11 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.body {
+    /* background-color: #31E981; */
+    background-image: url(../img/cool-background.png);
+    background-size: 100%;
+    
+}

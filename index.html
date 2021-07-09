@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--    bootstrap css cdn-->
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="CSS/index.css">
+
+    <title>Task 1</title>
+</head>
+<body class="body">
+    <!-- home page top blank portion -->
+    <div class="row" style="height: 40px;">
+    </div>
+
+    <!-- home  page middle section login button, sign up button etc -->
+    <div class="row" style="justify-content: center;">
+      <div class="col-2">
+        <button class="btn btn-primary"
+        id="signup_button"
+        data-toggle="modal"
+        data-target="#signup_modal"
+        >
+          <h4>Sign Up</h4>
+        </button>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-success"
+        id="login_button"
+        data-toggle="modal"
+        data-target="#login_modal"
+        >
+          <h4>Login</h4>
+        </button>
+      </div>
+    </div>
+
+
+
+    <!-- other extra stuffs modal -->
+
+    <!-- modal for sign up-->
+    <div
+    class="modal fade"
+    id="signup_modal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #0077B6;">
+          <div class="row mx-auto">
+            <h6 class="display-4">Sign Up</h6>
+          </div>
+        </div>
+        <!-- alert after create an account -->
+        <div class="modal-body mx-auto alert_hide" id="sign_up_alert">
+          <!--                                    alert for modal-->
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <!-- email -->
+              <input
+              type="email"
+              class="form-control"
+              id="signup_email"
+              placeholder="Email"
+              style="margin-bottom: 10px"
+              />
+              <!-- username -->
+              <input
+              type="text"
+              class="form-control"
+              id="signup_username"
+              placeholder="Username"
+              style="margin-bottom: 10px"
+              />
+          </div>
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control"
+                id="signup_password1"
+                placeholder="Password"
+                style="margin-bottom: 10px"
+              />
+              <input
+                type="password"
+                class="form-control"
+                id="signup_password2"
+                placeholder="Confirm Password"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button
+            type="submit"
+            class="btn btn-secondary"
+            data-dismiss="modal"
+            id="sign_up_close"
+          >
+            Close
+          </button>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            id="sign_up_submit"
+          >
+            Create Account
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- modal for login -->
+    <div
+      class="modal fade"
+      id="login_modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header"
+          style="background-color: #0CCA4A;"
+          >
+            <div class="row mx-auto">
+              <h6 class="display-4">Login</h6>
+            </div>
+          </div>
+          <!-- alert -->
+          <div class="modal-body mx-auto alert_hide" id="login_alert">
+            <!-- alert for modal-->
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="login_email"
+                  aria-describedby="emailHelp"
+                  placeholder="Email"
+                  style="margin-bottom: 10px"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="login_password"
+                  placeholder="Password"
+                  style="margin-bottom: 10px"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer mx-auto">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+              id="login_close"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="login_submit"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+  <!--    jquery cdn-->
+  <script src="./JS/jquery.js"></script>
+
+  <!-- bootstrap javascript cdn-->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- custom javascript -->
+  <script src="./JS/index.js"></script>
+</html>
